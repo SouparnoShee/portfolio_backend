@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
 })
 
 
-app.post("/email/send", async (req, res) => {
+app.post("/api/email", async (req, res) => {
     const { name, email, messages } = req.body;
 
     try {
